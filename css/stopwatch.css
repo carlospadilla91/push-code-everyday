@@ -1,0 +1,33 @@
+.wrapper {
+    width: 800px;
+    margin: 30px auto;
+    color: white;;
+    text-align: center;
+}
+
+body {
+    background: sienna;
+    font-family: "Arial Hebrew";
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: "Gotu", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#seconds, #tens {
+    font-size: 50px;
+}
+
+button {
+    background-color: sienna;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+}
