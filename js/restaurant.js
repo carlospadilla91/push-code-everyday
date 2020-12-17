@@ -3,7 +3,7 @@
 var welcome = alert("Welcome to Taqueria Padilla!");
 var dineInOrTakeout = prompt("Dine in or Takeout?").toLowerCase();
 
-    if(dineInOrTakeout === 'dine in') {
+(if(dineInOrTakeout === 'dine in') {
         alert("Welcome!");
         var sizeOfParty = prompt('How many in your party?');
     } else if (dineInOrTakeout === 'takeout') {
@@ -12,3 +12,9 @@ var dineInOrTakeout = prompt("Dine in or Takeout?").toLowerCase();
     } else {
         alert("Thank you for coming by!");
     }
+
+    if(sizeOfParty <= 4) {
+        alert("Your table is ready now.")
+    } else {
+        alert("It will be a 10 min wait.")
+    })();
