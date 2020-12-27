@@ -8,7 +8,7 @@ var littleMermaid = parseFloat(prompt("How many days do you want to rent Little 
 var brotherBear = parseFloat(prompt("How many days do you want to rent Brother Bear?"));
 var hercules = parseFloat(prompt("How many days do you want to rent Hercules?"));
 var pricePerDay = 3
-var total = alert("Your total is: $" + ((littleMermaid + brotherBear + hercules) * pricePerDay)).toFixed(2);
+var total = alert("Your total is: $" + ((littleMermaid + brotherBear + hercules) * pricePerDay));
 
 var googlePay = parseInt(prompt("How much does Google pay per hour?"));
 var amazonPay = parseInt(prompt("How much does Amazon pay per hour?"));
