@@ -10,7 +10,7 @@
  */
 function sayHello(name) {
     return "Hello " + name;
-};
+}
 
 /**
  * TODO:
@@ -53,7 +53,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  */
 function isTwo(num) {
     return num === 2;
-};
+}
 
 console.log(isTwo(random));
 
@@ -71,7 +71,7 @@ console.log(isTwo(random));
  */
 function calculateTip(tip, bill) {
     return tip * bill;
-};
+}
 
 console.log(calculateTip(0.20, 20), 4); // returns 4
 console.log(calculateTip(0.25, 25.50), 6.375); // returns 6.375
