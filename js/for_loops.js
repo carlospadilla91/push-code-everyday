@@ -10,7 +10,7 @@ showMultiplicationTable(7);
 showMultiplicationTable(3);
 
 
-for(var i = 1; i <= 10; i++) {
+for(var a = 1; a <= 10; a++) {
     var random = Math.floor(Math.random() * (200 - 20) + 20);
     if(random % 2 === 0) {
         console.log(random + ' is even.');
@@ -21,4 +21,8 @@ for(var i = 1; i <= 10; i++) {
 
 for(var x = 100; x >= 5; x -= 5) {
     console.log(x);
+}
+
+for(var i = 1; i < 10; i++) {
+    console.log(String(i).repeat(i));
 }
