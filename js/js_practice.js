@@ -131,5 +131,71 @@ function lessThanOrEqualToZero(num) {
     return num <= 0;
 }
 
+// 11. Create a function that takes two numbers as arguments and return their sum.
 
+// Examples
+// addition(3, 2) ➞ 5
+//
+// addition(-3, -6) ➞ -9
+//
+// addition(7, 3) ➞ 10
+
+function addition(a, b) {
+    return a + b;
+}
+
+// 12. Make a function using the && operator.
+
+// Examples
+// and(true, false) ➞ false
+//
+// and(true, true) ➞ true
+//
+// and(false, true) ➞ false
+//
+// and(false, false) ➞ false
+
+function and(a, b) {
+    return a && b;
+}
+
+// 13. Create a function that returns true when num1 is equal to num2; otherwise return false.
+
+// Examples
+// isSameNum(4, 8) ➞ false
+//
+// isSameNum(2, 2) ➞  true
+//
+// isSameNum(2, "2") ➞ false
+
+function isSameNum(num1, num2) {
+    return num1 === num2;
+}
+
+// 14. Create a function that returns true if a string is empty and false otherwise.
+
+// Examples
+// isEmpty("") ➞ true
+//
+// isEmpty(" ") ➞ false
+//
+// isEmpty("a") ➞ false
+
+function isEmpty(s) {
+    return s === "";
+}
+
+// 15. Write a function that takes the base and height of a triangle and return its area.
+
+// Examples
+// triArea(3, 2) ➞ 3
+//
+// triArea(7, 4) ➞ 14
+//
+// triArea(10, 10) ➞ 50
+// The area of a triangle is: (base * height) / 2
+
+function triArea(base, height) {
+    return (base * height) / 2;
+}
 
