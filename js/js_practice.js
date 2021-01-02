@@ -199,3 +199,28 @@ function triArea(base, height) {
     return (base * height) / 2;
 }
 
+// 16. Write a function called getRandomNumber(min, max) that returns a random number between min and max values sent to that function call.
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+console.log(getRandomNumber(0, 10));
+
+// 17. Write a function called first(input) that returns the first character in the provided string.
+
+function first(input) {
+    return input.charAt(0);
+}
+
+console.log(first("Carlos"));
+console.log(first("Sarah"));
+
+// 18. Write a function called last(input) that returns the last character of a string
+
+function last(input) {
+    return input.slice(-1);
+}
+
+console.log(last("Carlos"));
+console.log(last("Sarah"));
