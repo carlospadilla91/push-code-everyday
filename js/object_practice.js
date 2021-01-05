@@ -104,17 +104,24 @@ var dog = {
     bark: function () {
         console.log("Woof!");
     },
-    birthday: function getOlder() {
+    getOlder: function() {
         this.age += 1;
     },
-    disableBreeding: function isAbleToBreed() {
+    disableBreeding: function() {
         this.canBreed = false;
     },
-    newVaccines: function vaccinate(nameOfVaccination) {
-        console.log(this.shotRecords);
+    vaccinate: function(nameOfVaccination) {
         this.shotRecords.push({
             typeOfShot: nameOfVaccination,
             date: new Date()
-        })
+        });
     }
-}
+};
+
+dog.bark();
+dog.getOlder();
+console.log(dog.age);
+dog.disableBreeding();
+console.log(dog.canBreed);
+dog.vaccinate("Bordatella");
+console.log(dog.shotRecords);
