@@ -87,29 +87,34 @@ console.log(users[0].givenName + ',' + users[1].givenName + ',' + users[2].given
 
 
 
-// function vaccinate(nameOfVaccination) {
-//     dog.shotRecords.
-// }
+
 
 var dog = {
     breed: "Labrador",
     weightInPounds: 75,
     age: 3,
     color: "Black",
-    canBreed: false,
+    canBreed: true,
     shotRecords: [
         {
             date: "1/21/2020",
             typeOfShot: "Rabies"
         }
     ],
-    bark: function() {
+    bark: function () {
         console.log("Woof!");
     },
-    getOlder: function() {
+    birthday: function getOlder() {
         this.age += 1;
     },
     disableBreeding: function isAbleToBreed() {
-        dog.canBreed = false;
+        this.canBreed = false;
+    },
+    newVaccines: function vaccinate(nameOfVaccination) {
+        console.log(this.shotRecords);
+        this.shotRecords.push({
+            typeOfShot: nameOfVaccination,
+            date: new Date()
+        })
     }
 }
