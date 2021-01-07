@@ -190,3 +190,60 @@ if(enterNum === true) {
         alert("Input is not a number!");
     }
 }
+
+// Write a function named greaterNum that:
+//     takes 2 arguments, both numbers.
+//     returns whichever number is the greater (higher) number.
+//     Call that function 2 times with different number pairs, and log the output to make sure it works (
+//     e.g. "The greater number of 5 and 10 is 10.").
+
+function greaterNum(x, y) {
+    if(x > y) {
+        return x;
+    } else {
+        return y;
+    }
+}
+
+// Write a function named assignGrade that:
+//     takes 1 argument, a number score.
+//     returns a grade for the score, either "A", "B", "C", "D", or "F".
+
+function assignGrade(num) {
+    if(num === 90) {
+        return "A";
+} else if (num === 80) {
+        return "B";
+    } else if(num === 70) {
+        return "C";
+    } else if (num === 60) {
+        return "D";
+    } else {
+        return "F";
+    }
+}
+
+console.log(assignGrade(40));
+console.log(assignGrade(80));
+
+// Write a function that takes a string name and a number num (either 0 or 1) and return "Hello" + name if num is 1,
+// otherwise return "Bye" + name.
+//
+//     Examples
+// sayHelloBye("alon", 1) ➞ "Hello Alon"
+//
+// sayHelloBye("Tomi", 0) ➞ "Bye Tomi"
+//
+// sayHelloBye("jose", 0) ➞ "Bye Jose"
+
+function sayHelloBye(name, num) {
+    if(num === 1) {
+        return "Hello " + name;
+    }
+    if(num === 0) {
+        return "Bye " + name;
+    }
+}
+
+console.log(sayHelloBye('carlos', 1));
+console.log(sayHelloBye('sarah', 0));
