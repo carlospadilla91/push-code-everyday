@@ -247,3 +247,25 @@ function sayHelloBye(name, num) {
 
 console.log(sayHelloBye('carlos', 1));
 console.log(sayHelloBye('sarah', 0));
+
+// Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
+//
+//     Examples
+// intWithinBounds(3, 1, 9) ➞ true
+//
+// intWithinBounds(6, 1, 6) ➞ false
+//
+// intWithinBounds(4.5, 3, 8) ➞ false
+
+function intWithinBounds(n, lower, upper) {
+    if(n > lower && n < upper) {
+        return true
+    }
+    if(n !== Number.isInteger(n)) {
+        return false;
+    }
+}
+
+console.log(intWithinBounds(3, 1, 9));
+console.log(intWithinBounds(6, 1, 6));
+console.log(intWithinBounds(4.5, 3, 8)); //don't get expected output for this one
