@@ -201,7 +201,9 @@ assert(plusTwo(0), 2, "zero plus 2 is two")
 
 // Exercise 11
 // Write a function definition for a function named addOne that takes in a number and returns that number plus one
-
+function addOne(num) {
+    return num + 1;
+}
 
 assert(addOne(2), 3, "Exercise 11");
 assert(addOne(0), 1, "Exercise 11");
@@ -217,7 +219,9 @@ addToDone("Exercise 11 is correct.")
 // Is 5 positive? Is 0.25 positive? Is 0.00001 positive? Is -0.001 positive?
 // Is zero itself positive? What about infinity? What about negative infinity?
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators for guidance with JS comparison operators.
-
+function isPositive(num) {
+    return num > 0;
+}
 
 
 assert(isPositive(0.25), true, "Exercise 12");
@@ -235,7 +239,9 @@ addToDone("Exercise 12 is correct.")
 
 // Exercise 13
 // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
-
+function isNegative(num) {
+    return num < 0;
+}
 
 assert(isNegative(positiveOddNumber), false, "Exercise 13");
 assert(isNegative(positiveEvenNumber), false, "Exercise 13");
@@ -246,6 +252,9 @@ addToDone("Exercise 13 is correct.")
 
 // Exercise 14
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+function isOdd(num) {
+    return num % 2 !== 0;
+}
 
 assert(isOdd(positiveOddNumber), true, "Exercise 14");
 assert(isOdd(positiveEvenNumber), false, "Exercise 14");
@@ -255,7 +264,9 @@ addToDone("Exercise 14 is correct.")
 
 // Exercise 15
 // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
-
+function isEven(num) {
+    return num % 2 === 0;
+}
 
 assert(isEven(2), true, "Exercise 15");
 assert(isEven(positiveOddNumber), false, "Exercise 15");
@@ -267,6 +278,9 @@ addToDone("Exercise 15 is correct.")
 
 // Exercise 16
 // Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
+function identity(input) {
+    return input;
+}
 
 assert(identity(fruits), fruits, "Exercise 16");
 assert(identity(vegetables), vegetables, "Exercise 16");
@@ -279,6 +293,9 @@ addToDone("Exercise 16 is correct.")
 
 // Exercise 17
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
+function isPositiveOdd(num) {
+    return isPositive(num) && isOdd(num);
+}
 
 assert(isPositiveOdd(3), true, "Exercise 17");
 assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
@@ -290,6 +307,9 @@ addToDone("Exercise 17 is correct.")
 
 // Exercise 18
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
+function isPositiveEven(num) {
+    return isPositive(num) && isEven(num);
+}
 
 assert(isPositiveEven(4), true, "Exercise 18" );
 assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
@@ -301,7 +321,9 @@ addToDone("Exercise 18 is correct.")
 
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
-
+function isNegativeOdd(num) {
+    return isNegative(num) && isOdd(num);
+}
 
 assert(isNegativeOdd(-3), true, "Exercise 19" );
 assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
@@ -313,6 +335,9 @@ addToDone("Exercise 19 is correct.")
 
 // Exercise 20
 // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
+function isNegativeEven(num) {
+    return isNegative(num) && isEven(num);
+}
 
 assert(isNegativeEven(-4), true, "Exercise 20" );
 assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
