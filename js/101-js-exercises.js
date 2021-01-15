@@ -350,6 +350,9 @@ addToDone("Exercise 20 is correct.")
 
 // Exercise 21
 // Write a function definition named half that takes in a number and returns half the provided number.
+function half(num) {
+    return num / 2
+}
 
 assert(half(4), 2, "Exercise 21");
 assert(half(5), 2.5, "Exercise 21");
@@ -363,6 +366,9 @@ addToDone("Exercise 21 is correct.")
 
 // Exercise 22
 // Write a function definition named double that takes in a number and returns double the provided number.
+function double(num) {
+    return num * 2;
+}
 
 assert(double(4), 8, "Exercise 22");
 assert(double(5), 10, "Exercise 22");
@@ -376,7 +382,9 @@ addToDone("Exercise 22 is correct.")
 
 // Exercise 23
 // Write a function definition named triple that takes in a number and returns triple the provided number.
-
+function triple(num) {
+    return num * 3;
+}
 
 assert(triple(4), 12, "Exercise 23");
 assert(triple(5), 15, "Exercise 23");
@@ -390,7 +398,9 @@ addToDone("Exercise 23 is correct.")
 
 // Exercise 24
 // Write a function definition named reverseSign that takes in a number and returns the provided number but with the sign reversed.
-
+function reverseSign(num) {
+    return num * -1;
+}
 
 assert(reverseSign(4), -4, "Exercise 24");
 assert(reverseSign(-5), 5, "Exercise 24");
@@ -404,6 +414,9 @@ addToDone("Exercise 24 is correct.")
 
 // Exercise 25
 // Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number
+function absoluteValue(num) {
+    return Math.abs(num);
+}
 
 assert(absoluteValue(4), 4, "Exercise 25");
 assert(absoluteValue(-5), 5, "Exercise 25");
@@ -417,6 +430,9 @@ addToDone("Exercise 25 is correct.")
 
 // Exercise 26
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
+function isMultipleOfThree(num) {
+    return num % 3 === 0;
+}
 
 assert(isMultipleOfThree(3), true, "Exercise 26");
 assert(isMultipleOfThree(15), true, "Exercise 26");
@@ -430,6 +446,9 @@ addToDone("Exercise 26 is correct.")
 
 // Exercise 27
 // Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+function isMultipleOfFive(num) {
+    return num % 5 === 0;
+}
 
 assert(isMultipleOfFive(3), false, "Exercise 27");
 assert(isMultipleOfFive(15), true, "Exercise 27");
@@ -442,7 +461,9 @@ addToDone("Exercise 27 is correct.")
 
 // Exercise 28
 // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
-
+function isMultipleOfBothThreeAndFive(num) {
+    return isMultipleOfThree(num) && isMultipleOfFive(num);
+}
 
 assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
@@ -452,11 +473,11 @@ assert(isMultipleOfBothThreeAndFive(4), false, "Exercise 28");
 addToDone("Exercise 28 is correct.")
 
 
-
-
 // Exercise 29
 // Write a function definition named square that takes in a number and returns the number times itself.
-
+function square(num) {
+    return num * num;
+}
 
 assert(square(3), 9, "Exercise 29");
 assert(square(2), 4, "Exercise 29");
@@ -465,9 +486,11 @@ assert(square(positiveOddNumber), positiveOddNumber * positiveOddNumber, "Exerci
 addToDone("Exercise 29 is correct.")
 
 
-
 // Exercise 30
 // Write a function definition named add that takes in two numbers and returns the sum.
+function add(x, y) {
+    return x + y;
+}
 
 assert(add(3, 2), 5, "Exercise 30");
 assert(add(10, -2), 8, "Exercise 30");
