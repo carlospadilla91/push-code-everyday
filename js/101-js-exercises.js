@@ -885,17 +885,22 @@ addToDone("Exercise 58 is correct.")
 
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
-
+function firstToLast(seq) {
+    var firstItem = seq.shift();
+    seq.push(firstItem);
+    return seq;
+}
 
 assert(firstToLast([1, 2, 3, 4]), [2, 3, 4, 1], "Exercise 59");
 assert(firstToLast(["JS", "is", "awesome"]), ["is", "awesome", "JS"], "Exercise 59");
 assert(firstToLast(["strawberry", "kiwi", "mango", "guava"]), ["kiwi", "mango", "guava", "strawberry"], "Exercise 59");
 addToDone("Exercise 59 is correct.")
 
-
-
 // Exercise 60
 // Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
+function sumAll(seq) {
+    return seq.reduce((a, b) => a + b, 0)
+}
 
 assert(sumAll([1, 2, 3, 4]), 10, "Exercise 60");
 assert(sumAll([3, 3, 3]), 9, "Exercise 60");
@@ -906,6 +911,9 @@ addToDone("Exercise 60 is correct.")
 
 //  Exercise 61
 //  Write a function definition named mean that takes in sequence of numbers and returns the average value
+function mean(seq) {
+    return seq.reduce((a, b) => a + b) / seq.length;
+}
 
 assert(mean([1, 2, 3, 4]), 2.5, "Exercise 61");
 assert(mean([3, 3, 3]), 3, "Exercise 61");
