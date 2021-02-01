@@ -1653,9 +1653,9 @@ addToDone("Exercise 100 is complete.")
 // Hint: Consider creating a variable that is a object with the keys "price" and "quantity" both set to 0. You can then compare each item's price and quantity total to the one from "most"
 function mostSpentOnItem(obj) {
     var newObj = {
-        "title": "Cody the duck",
-        "price": 0,
-        "quantity": 0
+        title: "Cody the duck",
+        price: 0,
+        quantity: 0
     }
     for(var i = 0; i < obj.items.length; i += 1) {
         if((obj.items[i].price * obj.items[i].quantity) > (newObj.price * newObj.quantity)) {
