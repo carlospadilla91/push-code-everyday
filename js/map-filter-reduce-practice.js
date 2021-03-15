@@ -120,3 +120,11 @@ const makeSuperPet = petArr => {
     }
 }
 console.log(makeSuperPet(pets));
+
+//TODO: Create a function that takes in an array of pets and returns an array of the length of first names for pugs only. Your output for the given input should be [3, 6] for 'Bud' and 'Bowser'
+
+const firstNamesPugsOnly = arr => {
+
+};
+
+firstNamesPugsOnly(pets);
