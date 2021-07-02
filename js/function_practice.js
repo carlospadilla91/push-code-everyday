@@ -224,3 +224,25 @@ function last(input) {
 
 console.log(last("Carlos"));
 console.log(last("Sarah"));
+
+const isOdd = x => x % 2 === 1;
+// console.log(isOdd(1))
+// console.log(isOdd(2))
+
+const isEven = x => x % 2 === 0;
+// console.log(isEven(1))
+// console.log(isEven(2))
+
+const isVowel = input => {
+    const vowelList = 'AEIOUaeiou';
+    return vowelList.includes(input);
+}
+// console.log(isVowel('a'))
+// console.log(isVowel('E'))
+// console.log(isVowel('d'))
+
+const hasLowerCase = string => {
+    return string.toUpperCase() !== string;
+}
+// console.log(hasLowerCase("Carlos"))
+// console.log(hasLowerCase("CARLOS"))
