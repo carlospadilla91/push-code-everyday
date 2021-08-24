@@ -246,3 +246,65 @@ const hasLowerCase = string => {
 }
 // console.log(hasLowerCase("Carlos"))
 // console.log(hasLowerCase("CARLOS"))
+
+//
+// TODO: Given a string of any length with any characters in it, write a function to determine whether or not the string contains the whole word "english". The order of characters/spelling is important, a string "agkjnenglishsad" would return true while "asdneglihsth" would return false. Upper and lower case does not matter. Return values should be booleans (true/false).
+
+const hasWordEnglish = str => {
+    const word = "english";
+    return (str.toLowerCase().includes(word));
+}
+
+// console.log(hasWordEnglish("carlosenglishpadilla"));
+// console.log(hasWordEnglish("hello"));
+// console.log(hasWordEnglish("carlosENGLIshpadilla"));
+
+//
+// TODO: Given an array of integers, write a function that returns an array of 2 integers. The first integer will be the count of the positive integers, and the second integer will be the sum of the negative integers. If the input is empty or null, return an empty array.
+
+// const intArr = arr => {
+    // if (arr)
+// }
+
+// TODO: print symmetric triangle
+
+// const triangle = h => {
+//     for (let i = 1; i <= h; i++) {
+//         let row = '';
+//
+//         for (let j = 1; j <= i; j++) {
+//             row += '_ ';
+//         }
+//
+//         console.log(row + '*' + row);
+//     }
+// }
+//
+// triangle(5);
+
+const symmetricTriangle = num => {
+    for (let i = 1; i <= num; i++) {
+        let row = '';
+
+        for (let j = 1; j <= i; j++) {
+            row += '_ '
+        }
+
+        console.log(row + '*' + row)
+    }
+}
+
+symmetricTriangle(10);
+
+// function practice from W3 resource  https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+
+//TODO: 1. Write a JavaScript function that reverse a number. Go to the editor
+// Example x = 32243;
+// Expected Output : 34223
+
+const numReverse = num => parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+
+console.log(numReverse(32243));
+
+//TODO: 2. Write a JavaScript function that checks whether a passed string is palindrome or not?
+

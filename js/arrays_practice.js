@@ -52,3 +52,34 @@ const filterNumbers = arr => {
 console.log(filterNumbers(['carlos', 4, 'sarah', 7]));
 console.log(filterNumbers(['maggie', 3, 'piper', 8]));
 console.log(filterNumbers(['carlos', 5, 'sarah', 9]));
+
+//TODO: Write a function, getOlder() that takes in array of dog objects and increases the value of each object's age property by 1.
+
+// example input
+
+let dogArray = [
+    {
+        name: "Chompers",
+        breed: "Pug",
+        age: 7
+    },
+    {
+        name: "Freddy",
+        breed: "Lab",
+        age: 4
+    },
+    {
+        name: "Mr. Pig",
+        breed: "Mastif",
+        age: 10
+    }
+]
+
+
+const getOlder = arr => {
+   arr.forEach((obj) => {
+       obj.age + 1;
+   })
+}
+
+console.log(getOlder(dogArray));
