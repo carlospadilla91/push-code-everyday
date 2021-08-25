@@ -308,3 +308,32 @@ console.log(numReverse(32243));
 
 //TODO: 2. Write a JavaScript function that checks whether a passed string is palindrome or not?
 
+const checkPalindrome = str => str.toLowerCase() === str.toLowerCase().split('').reverse().join('');
+
+// function needs to check for sad paths ******
+
+console.log(checkPalindrome('Madam'));  // returns true
+console.log(checkPalindrome('sarah'));  // returns false
+console.log(checkPalindrome('Nurses run')); // returns false
+
+
+//TODO: 3. Write a JavaScript function that generates all combinations of a string. Go to the editor
+// Example string : 'dog'
+// Expected Output : d,do,dog,o,og,g
+
+const allCombinations = str => {
+    let combinations = [];
+    for (let i = 0; i < str.length; i += 1) {
+
+        for (let j = i + 1; j < str.length + 1; j += 1) {
+            combinations.push(str.slice(i, j));
+        }
+    }
+    return combinations;
+}
+
+console.log(allCombinations("dog"));
+console.log(allCombinations("carlos"));
+
+
+
