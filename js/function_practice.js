@@ -335,5 +335,48 @@ const allCombinations = str => {
 console.log(allCombinations("dog"));
 console.log(allCombinations("carlos"));
 
+//TODO: 4. Write a JavaScript function that returns a passed string with letters in alphabetical order. Go to the editor
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// Assume punctuation and numbers symbols are not included in the passed string.
+
+const sortedString = str => str.split('').sort().join('');
+
+console.log(sortedString('carlos'));
+console.log(sortedString('sarah'));
+
+//TODO: 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. Go to the editor
+// Example string : 'the quick brown fox'
+// Expected Output : 'The Quick Brown Fox '
+
+const capitalizeFirstLetter = str => {
+    let arr = str.split(' ');
+    let newArr = [];
+    for (let i = 0; i < arr.length; i += 1) {
+        newArr.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1));
+    }
+    return newArr.join(' ');
+}
+
+console.log(capitalizeFirstLetter('my twin babies are 10 weeks old'));
+
+//TODO: 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. Go to the editor
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+
+const longestString = str => {
+    let arr = str.split(' ');
+    let longest = 0;
+    let word = null;
+    for (let i = 0; i < arr.length; i += 1) {
+        if (arr[i].length > longest) {
+            longest = arr[i].length;
+            word = arr[i];
+        }
+    }
+    return word;
+}
+
+console.log(longestString('carlos got a haircut today'));
 
 
