@@ -379,4 +379,36 @@ const longestString = str => {
 
 console.log(longestString('carlos got a haircut today'));
 
+//TODO: 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. Go to the editor
+// Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+
+const vowelCount = str => {
+    let vowels = 'aeiouAEIOU';
+    let count = 0;
+    for (let i = 0; i< str.length; i += 1) {
+        if (vowels.indexOf(str[i]) !== -1) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(vowelCount('carlos'))
+console.log(vowelCount('shhh'))
+
+//TODO: 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not. Go to the editor
+// Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+const isPrime = num => {
+    for (let i = 2; i < num; i += 1) {
+        if (num % i === 0) return false;
+    }
+    return num > 1;
+}
+
+console.log(isPrime(37))
+console.log(isPrime(4));
+
 
