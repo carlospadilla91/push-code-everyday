@@ -411,4 +411,54 @@ const isPrime = num => {
 console.log(isPrime(37))
 console.log(isPrime(4));
 
+let obj1 = {
+    name: 'carlos',
+    age: 30,
+    gender: 'male'
+}
 
+for (let property in obj1) {
+    console.log(property + ': ' + obj1[property]);
+}
+
+
+//TODO: 9. Write a JavaScript function which accepts an argument and returns the type. Go to the editor
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+
+const inputType = input => typeof input;
+
+console.log(inputType({obj1}));
+console.log(inputType(5));
+console.log(inputType('carlos'));
+console.log(inputType(5 > 7));
+
+
+//TODO: 10. Write a JavaScript function which returns the n rows by n columns identity matrix.
+
+const matrix = input => {
+    let i;
+    let j;
+
+    for (i = 0; i < input; i += 1) {
+
+        for (j = 0; j < input; j += 1) {
+
+            if (i === j) {
+                console.log('1');
+            } else {
+                console.log('0');
+            }
+        }
+        console.log('----------');
+    }
+}
+
+matrix(4);
+
+//TODO: 11. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. Go to the editor
+// Sample array : [1,2,3,4,5]
+// Expected Output : 2,4
+
+const secondLowestSecondHighest = arr => {
+
+}
