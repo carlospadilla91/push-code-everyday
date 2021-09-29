@@ -462,3 +462,61 @@ matrix(4);
 const secondLowestSecondHighest = arr => {
 
 }
+
+// palindrome challenge; should return true or false if string input is the same reverse
+
+const palindrome = (str) => {
+    str = str.toLowerCase();
+    return str === str.split('').reverse().join('');
+}
+
+console.log(palindrome('racecar'));
+console.log(palindrome('carlos'));
+
+// fizzbuzz challenge
+
+const fizzbuzz = () => {
+    for (let i = 1; i <= 100; i ++) {
+
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        } else if(i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+console.log(fizzbuzz());
+
+// anagram challenge write a function that checks if two provided strings are anagrams of each other; letter casing shouldn’t matter. Also, consider only characters, not spaces or punctuation
+
+const anagram = (str1, str2) => {
+    if (str1.length !== str2.length) return false;
+
+    return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
+}
+
+console.log(anagram('finder', 'friend'));
+console.log(anagram('hi', 'hello'));
+console.log(anagram('hi', 'bi'));
+console.log(anagram('leg', 'gel'));
+
+// find vowels challenge
+
+const countVowels = (str) => {
+    let vowels = "aeiouAEIOU";
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.indexOf(str[i]) !== -1) {
+            count ++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels('carlos'));
+console.log(countVowels('bbb'));
